@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diamond-valley-hoops.netlify.app/sitemap.xml

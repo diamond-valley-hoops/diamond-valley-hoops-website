@@ -328,6 +328,8 @@
     .video-slot { aspect-ratio: 16 / 9; margin-bottom: 18px; }
     .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .photo-slot { aspect-ratio: 4 / 3; }
+    .photo-slot.filled { padding: 0; border: none; background: var(--navy-deep); }
+    .photo-slot.filled img { width: 100%; height: 100%; object-fit: contain; display: block; }
 
     /* ---------- Schedule ---------- */
     .schedule { background: var(--surface); }
@@ -687,22 +689,10 @@
             <span class="slot-label">Video</span>
           </div>
           <div class="photo-grid">
-            <div class="slot photo-slot" role="img" aria-label="Empty photo slot 1">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-              <span class="slot-label">Photo 1</span>
-            </div>
-            <div class="slot photo-slot" role="img" aria-label="Empty photo slot 2">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-              <span class="slot-label">Photo 2</span>
-            </div>
-            <div class="slot photo-slot" role="img" aria-label="Empty photo slot 3">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-              <span class="slot-label">Photo 3</span>
-            </div>
-            <div class="slot photo-slot" role="img" aria-label="Empty photo slot 4">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-              <span class="slot-label">Photo 4</span>
-            </div>
+            <div class="slot photo-slot filled"><img src="about-culture.jpg" alt="Culture is a byproduct — clear standards, daily accountability — Kelvin Sampson" /></div>
+            <div class="slot photo-slot filled"><img src="about-dawg.jpg" alt="D.A.W.G. — Discipline, Attitude, Work, Grit" /></div>
+            <div class="slot photo-slot filled"><img src="about-compete.jpg" alt="Compete, Develop, Grow — Diamond Valley Hoops" /></div>
+            <div class="slot photo-slot filled"><img src="about-glory.jpg" alt="Hard Work Before Glory — the preparation comes before the performance" /></div>
             <div class="slot photo-slot" role="img" aria-label="Empty photo slot 5">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <span class="slot-label">Photo 5</span>
